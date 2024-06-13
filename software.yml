@@ -466,56 +466,7 @@ softwarePackages:
   #   _short: "assh is a tool that simplifies SSH configuration management by allowing you to define host aliases and settings in a single YAML file.                                                                    "
   #   brew: assh
   #   go: moul.io/assh/v2
-  #   yay: assh
-  # astronvim:
-  #   _deps:
-  #     - bottom
-  #     - lazygit
-  #     - neovim
-  #     - node
-  #     - python
-  #     - ripgrep
-  #     - tree-sitter
-  #   _deprecated: AstronVIM is deprecated in favor of NvChad which has more stars and is less troublesome to install (in our experience)
-  #   _desc: "[AstroNvim](https://astronvim.github.io/) is an aesthetic and feature-rich neovim config that is extensible and easy to use with a great set of plugins"
-  #   _docs: https://astronvim.github.io/
-  #   _github: https://github.com/AstroNvim/AstroNvim
-  #   _home: https://astronvim.github.io/
-  #   _name: AstroNvim
-  #   _post: |
-  #     #!/usr/bin/env bash
-  #     # TODO
-  #     echo "Waiting on command that installs nvim plugins"
-  #     # bash -ci "nvim --headless -c 'quitall'"
-  #   _short: "AstroNvim is a plugin for Neovim that provides astronomy-related features and tools for users interested in astronomy while coding.                                                                       "
-  # atuin:
-  #   _bin: atuin
-  #   _desc: "Atuin is a tool for managing AWS infrastructure using a simple command-line interface. It allows users to create, update, and delete AWS resources like EC2 instances, security groups, and S3 buckets    \nusing a declarative configuration file. Atuin aims to simplify AWS infrastructure management by providing a user-friendly interface and automating common tasks. It is written in Go and is open-source,  \navailable on GitHub at https://github.com/ellie/atuin.                                                                                                                                                    "
-  #   _github: https://github.com/ellie/atuin
-  #   _name: Atuin
-  #   _short: "Atuin is a command-line tool for managing macOS windows.                                                                                                                                              "
-  #   brew: atuin
-  #   cargo: atuin
-  #   pacman: atuin
-  #   pkg-termux: atuin
-  #   port: atuin
-  # audacity:
-  #   _app: Audacity.app
-  #   _bin: audacity
-  #   _desc: An open-source audio editor
-  #   _docs: https://support.audacityteam.org/
-  #   _github: https://github.com/audacity/audacity
-  #   _home: https://www.audacityteam.org/
-  #   _name: Audacity
-  #   _short: "Audacity is an open-source audio editing software for recording and editing sounds.                                                                                                                       "
-  #   appimage: Audacity
-  #   apt: audacity
-  #   cask: audacity
-  #   choco: audacity
-  #   dnf: audacity
-  #   flatpak: org.audacityteam.Audacity
-  #   scoop: extras/audacity
-  #   snap: audacity
+  #   yay: assh                                                                    "
   # auto-install:
   #   _bin: auto-install
   #   _desc: "[auto-install](https://github.com/siddharthkp/auto-install) installs dependencies as you code"
