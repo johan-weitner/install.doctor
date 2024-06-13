@@ -8,3 +8,5 @@ export PRIMARY_EMAIL="johanweitner@gmail.com"
 export PUBLIC_SERVICES_DOMAIN="johan.weitner"
 export START_REPO=johan-weitner/install.doctor
 export START_BRANCH=main
+export WORK_ENVIRONMENT=false
+export SOFTWARE_GROUP=""

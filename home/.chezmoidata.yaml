@@ -20,31 +20,31 @@ colors:
   color15: '#24E5FF'
   color16: '#FFFFFF'
 config:
-  gpg: https://raw.githubusercontent.com/drduh/config/master/gpg.conf
+#   gpg: https://raw.githubusercontent.com/drduh/config/master/gpg.conf
 docker:
   healthchecks:
-    allowedHosts: '*'
-    s3Endpoint: s3.wasabisys.com
-    siteLogoUrl: https://raw.githubusercontent.com/megabyte-labs/install.doctor/master/home/dot_local/etc/branding/black-icon-128x128.png
-    siteName: Healthchecks
-    siteRoot: '/'
+#     allowedHosts: '*'
+#     s3Endpoint: s3.wasabisys.com
+#     siteLogoUrl: https://raw.githubusercontent.com/megabyte-labs/install.doctor/master/home/dot_local/etc/branding/black-icon-128x128.png
+#     siteName: Healthchecks
+#     siteRoot: '/'
   portainer:
-    siteLogoUrl: https://gitlab.com/megabyte-labs/misc/assets/-/raw/master/logo/color3@10x.png
-    templatesUrl: https://raw.githubusercontent.com/Lissy93/portainer-templates/main/templates.json
+#     siteLogoUrl: https://gitlab.com/megabyte-labs/misc/assets/-/raw/master/logo/color3@10x.png
+#     templatesUrl: https://raw.githubusercontent.com/Lissy93/portainer-templates/main/templates.json
   statping:
-    description: Uptime monitoring for Megabyte Labs managed web services
-    name: Uptime Monitoring
+#     description: Uptime monitoring for Megabyte Labs managed web services
+#     name: Uptime Monitoring
   wireguard:
-    serverUrl: megabyte.space
-    internalSubnet: 10.93.92.0
+#     serverUrl: megabyte.space
+#     internalSubnet: 10.93.92.0
 # All JuiceFS volumes should be postfixed with "manhattan" so you should create private-manhattan, public-manhattan, user-manhattan, and docker-manhattan
-juicefsVolumeNamePostfix: manhattan
-kubernetesHost: kochab
+juicefsVolumeNamePostfix: # manhattan
+kubernetesHost: # kochab
 macosRemoteLogin: 'on'
 themeparkTheme: aquamarine
 figmaAddons:
-  - https://www.figma.com/community/plugin/1037309320238203168/DhiWise---Figma-to-Code
-  - https://www.figma.com/community/plugin/1056467900248561542/Locofy-FREE-BETA---Figma-to-React%2C-React-Native%2C-HTML%2FCSS%2C-Next.js%2C-Gatsby
+#   - https://www.figma.com/community/plugin/1037309320238203168/DhiWise---Figma-to-Code
+#   - https://www.figma.com/community/plugin/1056467900248561542/Locofy-FREE-BETA---Figma-to-React%2C-React-Native%2C-HTML%2FCSS%2C-Next.js%2C-Gatsby
 chromeExtensionsDisabled:
   - buster-captcha-solver-for/mpbjkejclgfgadiemmefgebjfooflfhl
   - chatgpt-app-for-chrome-me/camppjleccjaphfdbohjdohecfnoikec
@@ -105,53 +105,53 @@ chromeExtensions:
   - vytal/ncbknoohfjmcfneopnfkapmkblaenokb
   - web-archives/hkligngkgcpcolhcnkgccglchdafcnao
   - web-vitals/ahfhijdlegdabablpippeagghigmibma
-firefoxPublicProfile: https://github.com/ProfessorManhattan/firefox-profile-with-plugins.git
+firefoxPublicProfile: # https://github.com/ProfessorManhattan/firefox-profile-with-plugins.git
 firefoxAddOns:
-  - automa
-  - bitwarden-password-manager
-  - buffer-for-firefox
-  - buster-captcha-solver
-  - canvasblocker
-  - chatgpt-for-google
-  - clearurls
-  - decentraleyes
-  - dictionary-anyvhere
-  - ebates
-  - emoji-sav
-  - falcon_extension
-  - firefox-translations
-  - floccus
-  - giphy-for-firefox
-  - gnome-shell-integration
-  - hoppscotch
-  - json-lite
-  - languagetool
-  - pushbullet
-  - mailvelope
-  - markdown-here
-  - medium-unlimited-read-for-free
-  - multi-account-containers
-  # - notion-web-clipper
-  - pieces-save-code-from-the-web
-  - private-relay
-  - profile-switcher
-  - refined-github-
-  - search_by_image
-  - single-file
-  - sponsorblock
-  - swift-selection-search
-  - temporary-containers
-  - tiny_url
-  - ublock-origin
-  - umatrix
-  - undoclosetabbutton
-  - view-page-archive
+#   - automa
+#   - bitwarden-password-manager
+#   - buffer-for-firefox
+#   - buster-captcha-solver
+#   - canvasblocker
+#   - chatgpt-for-google
+#   - clearurls
+#   - decentraleyes
+#   - dictionary-anyvhere
+#   - ebates
+#   - emoji-sav
+#   - falcon_extension
+#   - firefox-translations
+#   - floccus
+#   - giphy-for-firefox
+#   - gnome-shell-integration
+#   - hoppscotch
+#   - json-lite
+#   - languagetool
+#   - pushbullet
+#   - mailvelope
+#   - markdown-here
+#   - medium-unlimited-read-for-free
+#   - multi-account-containers
+#   # - notion-web-clipper
+#   - pieces-save-code-from-the-web
+#   - private-relay
+#   - profile-switcher
+#   - refined-github-
+#   - search_by_image
+#   - single-file
+#   - sponsorblock
+#   - swift-selection-search
+#   - temporary-containers
+#   - tiny_url
+#   - ublock-origin
+#   - umatrix
+#   - undoclosetabbutton
+#   - view-page-archive
 fonts:
   main: Montserrat Bold
-grub:
-  shiftToSee: false
-  timeout: 9
-whiteLabel: false
+# grub:
+#   shiftToSee: false
+#   timeout: 9
+# whiteLabel: false
 removeLinuxPackages:
   - aisleriot
   - gnome-mahjongg
@@ -180,83 +180,83 @@ softwareGroups:
     - mage-ai
     - shell-gpt
   Android: &Android
-    - apktool
-    - repo
-    - scrcpy
+#     - apktool
+#     - repo
+#     - scrcpy
   Android-Desktop: &Android-Desktop
-    - android-studio
-    - genymotion
-    - scrcpy-gui
-    - soduto
+#     - android-studio
+#     - genymotion
+#     - scrcpy-gui
+#     - soduto
   Anon: &Anon
-    - onionshare
+#     - onionshare
   Ansible: &Ansible
     - ansible
     - ansibler
     - ansible-lint
     - ansibleconnect
-    - awxcli
-    - molecule
-    - winrm-cli
+#     - awxcli
+#     - molecule
+#     - winrm-cli
   Ansible-Roles: &Ansible-Roles []
-    # TODO: Implement these using chezmoiscripts
-    ## - ssh
-    ## - swarm
-    ## - vpn
-    ## - wsl
-    ## - antivirus
-    ## - common
-    # - connect
-    ## - debloat
-    ## - desktop
-    # - disks
-    ## - dns
-    ## - dnsmasq
-    ## - environment
-    ## - extensions
-    ## - finish
-    ## - firewall
-    ## - fuse
-    ## - guacamole
-    ## - hosthomepage
-    ## - hosts
-    # - motd
-    # - pfsense
-    # - pihole
-    # - pip
-    ## - prepare
-    ## - security
-    ## - ssh
-    # - swarm
-    # - maas
+#     # TODO: Implement these using chezmoiscripts
+#     ## - ssh
+#     ## - swarm
+#     ## - vpn
+#     ## - wsl
+#     ## - antivirus
+#     ## - common
+#     # - connect
+#     ## - debloat
+#     ## - desktop
+#     # - disks
+#     ## - dns
+#     ## - dnsmasq
+#     ## - environment
+#     ## - extensions
+#     ## - finish
+#     ## - firewall
+#     ## - fuse
+#     ## - guacamole
+#     ## - hosthomepage
+#     ## - hosts
+#     # - motd
+#     # - pfsense
+#     # - pihole
+#     # - pip
+#     ## - prepare
+#     ## - security
+#     ## - ssh
+#     # - swarm
+#     # - maas
   Backup: &Backup
-    - autorestic
-    - backup
-    - ghorg
-    - mackup
-    - restic
-    - sanoid
+#     - autorestic
+#     - backup
+#     - ghorg
+#     - mackup
+#     - restic
+#     - sanoid
   Backup-Desktop: &Backup-Desktop
     - cryptomator
-    - seafile-client
-    - timeshift
+#     - seafile-client
+#     - timeshift
   Browsers: &Browsers
-    - w3m
+#     - w3m
   Browsers-Desktop: &Browsers-Desktop
-    - brave-browser
+#     - brave-browser
     - google-chrome
     - chrome-cli
-    - ferdium
-    - firefox
-    - microsoft-edge
-    - tor-browser
+#     - ferdium
+#     - firefox
+#     - microsoft-edge
+#     - tor-browser
   CI: &CI
     - act
     - argo-cli
     - drone-cli
     - fpm
     - github-runner
-    - gitlab-runner
+#     - gitlab-runner
     - glen
     - pipelight
     - tart
@@ -443,49 +443,49 @@ softwareGroups:
     - yank
     - zsh-completions
   Cloud: &Cloud
-    - awscli
-    - aws-shell
-    - azure-cli
-    - azure-functions
-    - budibase-cli
-    - consul-cli
-    - curator
-    - doctl
-    - envconsul
-    - fission
-    - fly
+#     - awscli
+#     - aws-shell
+#     - azure-cli
+#     - azure-functions
+#     - budibase-cli
+#     - consul-cli
+#     - curator
+#     - doctl
+#     - envconsul
+#     - fission
+#     - fly
     - gcloud
-    - heroku-cli
-    - infracost
-    - juju
-    - lexicon
-    - logcli
-    - mongodb-atlas
-    - nextcloud
-    - psu
-    - rancher-cli
+#     - heroku-cli
+#     - infracost
+#     - juju
+#     - lexicon
+#     - logcli
+#     - mongodb-atlas
+#     - nextcloud
+#     - psu
+#     - rancher-cli
   Cloud-Storage: &Cloud-Storage
-    - gdrive
-    - gphotos-sync
-    - rclone
-    - s5cmd
+#     - gdrive
+#     - gphotos-sync
+#     - rclone
+#     - s5cmd
   Compression: &Compression
-    - p7zip
-    - pigz
+#     - p7zip
+#     - pigz
   Communication: &Communication
-    - apprise
-    - irssi
+#     - apprise
+#     - irssi
   Communication-Desktop: &Communication-Desktop
     - *Communication
-    - discord
+#     - discord
     - element
     - microsoft-teams
-    # - jitsi-meet
-    # - keybase
-    - skype
+#     # - jitsi-meet
+#     # - keybase
+#     - skype
     - slack
-    # - telegram
-    - zoom
+#     # - telegram
+#     - zoom
   Crypto: &Crypto
     - cointop
     - monero
@@ -495,10 +495,10 @@ softwareGroups:
     - ledger-live
     - onlykey
   DNS: &DNS
-    - blocky
-    - hostctl
-    - iodine
-    - switchhosts
+#     - blocky
+#     - hostctl
+#     - iodine
+#     - switchhosts
   Data-Manipulation: &Data-Manipulation
     - dasel
     - fq
@@ -524,24 +524,24 @@ softwareGroups:
     - yj
     - yq
   Database: &Database
-    - iredis
-    - mariadb
-    - mongodb
-    - octosql
-    - sqlite
-    - steampipe
-    - usql
+#     - iredis
+#     - mariadb
+#     - mongodb
+#     - octosql
+#     - sqlite
+#     - steampipe
+#     - usql
   Database-Desktop: &Database-Desktop
-    - beekeeper-studio
-    - medis
-    - mongodb-compass
+#     - beekeeper-studio
+#     - medis
+#     - mongodb-compass
   Development-Tools-Desktop: &Development-Tools-Desktop
     - github-desktop
-    - intellij-idea-ce
-    - meld
+#     - intellij-idea-ce
+#     - meld
     - powershell
-    - redis-desktop-manager
-    - redis-insight
+#     - redis-desktop-manager
+#     - redis-insight
     - visual-studio
     - warp-terminal
     - winui-gallery
@@ -552,31 +552,31 @@ softwareGroups:
     - xcpretty
     - x64dbg
   Docker: &Docker
-    - bane
-    - clair
-    - container-structure-test
-    - dive
-    - docker-pushrm
-    - docker-slim
-    - dockle
-    - dockly
-    - footloose
-    - grype
-    - trivy
-    - trufflehog
+#     - bane
+#     - clair
+#     - container-structure-test
+#     - dive
+#     - docker-pushrm
+#     - docker-slim
+#     - dockle
+#     - dockly
+#     - footloose
+#     - grype
+#     - trivy
+#     - trufflehog
   E-mail: &E-mail
-    - himalaya
-    - mailsy
+#     - himalaya
+#     - mailsy
   E-mail-Desktop: &E-mail-Desktop
-    - m-cli
-    - mailspring
-    - protonmail-import-export
-    - protonmail-bridge
-    # - thunderbird
+#     - m-cli
+#     - mailspring
+#     - protonmail-import-export
+#     - protonmail-bridge
+#     # - thunderbird
   Engineering-Desktop: &Engineering-Desktop
-    - arduino-ide
-    - cutter
-    - fritzing
+#     - arduino-ide
+#     - cutter
+#     - fritzing
   Essentials: &Essentials
     - clamav
     - docker
@@ -609,14 +609,14 @@ softwareGroups:
     - goofys
     - sshfs
   File-System-Desktop: &File-System-Desktop
-    - cyberduck
+#     - cyberduck
   Finance: &Finance
-    - infracost
+#     - infracost
   Finance-Desktop: &Finance-Desktop
-    - tradingview
+#     - tradingview
   Games-Desktop: &Games-Desktop
-    - mudlet # MUD client 
-    - steam
+#     - mudlet # MUD client
+#     - steam
   Git: &Git
     - aicommits
     - commitizen
@@ -648,9 +648,9 @@ softwareGroups:
   Git-Desktop: &Git-Desktop
     - github-classroom-assistant
     - gitify
-    - gitkraken
+#     - gitkraken
   Git-Project-Tools: &Git-Project-Tools
-    - appnest-readme
+#     - appnest-readme
     - commitlint
     - git-notify
     - hbs-cli
@@ -658,21 +658,21 @@ softwareGroups:
     - liquidjs
     - pnpm-lock-export
     - synp
-    - yarnhook
+#     - yarnhook
   Go: &Go
-    - delve
-    - go
-    - goreleaser
-    - go-outline
-    - gomodifytags
-    - gopkgs
-    - gopls
-    - gotests
-    - impl
-    - staticcheck
-    - wails
+#     - delve
+#     - go
+#     - goreleaser
+#     - go-outline
+#     - gomodifytags
+#     - gopkgs
+#     - gopls
+#     - gotests
+#     - impl
+#     - staticcheck
+#     - wails
   Home: &Home
-    - go-chromecast
+#     - go-chromecast
   Kubernetes: &Kubernetes
     - cmctl
     - kdash
@@ -701,34 +701,34 @@ softwareGroups:
     - lens
   Linting: &Linting
     - ansible-lint
-    - cloc
-    - dockfmt
+#     - cloc
+#     - dockfmt
     - dotenv-linter
-    - dprint
-    - eslint
-    - eslint-dashboard
-    - eslintd
-    - esprint
+#     - dprint
+#     - eslint
+#     - eslint-dashboard
+#     - eslintd
+#     - esprint
     - gitleaks
-    - golangci-lint
-    - hadolint
+#     - golangci-lint
+#     - hadolint
     - markdownlint-cli
-    - prettierd
+#     - prettierd
     - pre-commit
-    - psscriptanalyzer
-    - reek
-    - rubocop
-    - ruff
+#     - psscriptanalyzer
+#     - reek
+#     - rubocop
+#     - ruff
     - shellcheck
-    - shfmt
+#     - shfmt
     - swiftformat
-    - tflint
-    - tfsec
-    - tokei
-    - trunk
-    - vale
+#     - tflint
+#     - tfsec
+#     - tokei
+#     - trunk
+#     - vale
     - yamllint
-    - yapf
+#     - yapf
   Logging: &Logging
     - fuego
     - papertrail
@@ -758,25 +758,25 @@ softwareGroups:
     - youtube-dl
     - yt-dlp
   Media-Desktop: &Media-Desktop
-    # - airtame
-    - audacity
-    - balenaetcher
-    - blender
-    - brasero
-    - crunch-app
-    - gimp
-    - handbrake
-    - inkscape
+#     # - airtame
+#     - audacity
+#     - balenaetcher
+#     - blender
+#     - brasero
+#     - crunch-app
+#     - gimp
+#     - handbrake
+#     - inkscape
     - kdenlive
     - kodi
     - krita
     - lollypop
     - obs-studio
-    - plex
-    - plex-htpc
-    - plex-media-server
+#     - plex
+#     - plex-htpc
+#     - plex-media-server
     - prezi-video
-    - raspberry-pi-imager
+#     - raspberry-pi-imager
     - shotcut
     - shotwell
     - upscayl
@@ -784,20 +784,20 @@ softwareGroups:
     - youtube-music
   Misc-Desktop: &Misc-Desktop
     - _misc-flatpaks
-    - _nautilus-extensions
-    - barrier
-    - cakebrew
+#     - _nautilus-extensions
+#     - barrier
+#     - cakebrew
     - chrome-remote-desktop-host
-    - clocker
+#     - clocker
     - devtoys
     - devtoys-windows
     - drawio
-    - eartrumpet
-    - edex-ui
+#     - eartrumpet
+#     - edex-ui
     - envpane
-    - google-assistant
+#     - google-assistant
     - gnome-tweaks
-    - hiddenbar
+#     - hiddenbar
     - keycastr
     - linkliar
     - logi-options-plus
@@ -813,15 +813,15 @@ softwareGroups:
     - pretzel
     - privileges
     - qlplugins
-    - remote-desktop
+#     - remote-desktop
     - remmina
     - rofi
     - rustdesk
     - secretive
     - stats
     - swiftbar
-    - teamviewer
-    - tigervnc
+#     - teamviewer
+#     - tigervnc
     - xpra
   Misc-Development-Tools: &Misc-Development-Tools
     - ansifilter
@@ -865,41 +865,41 @@ softwareGroups:
     - snapcraft
     - solidity
     - swimat
-    - tomcat
+#     - tomcat
     - upx
-    - windows-adk
+#     - windows-adk
     - windows-admin-center
     - windows-power-toys
   NGINX: &NGINX
-    - caddy
-    - certbot
-    - cfssl
-    - gixy
-    - mkcert
+#     - caddy
+#     - certbot
+#     - cfssl
+#     - gixy
+#     - mkcert
     - nginx
-    - nginx-unit
-    # - maas
-    - ngxtop
+#     - nginx-unit
+#     # - maas
+#     - ngxtop
   Network-Enabled: &Network-Enabled
-    - cockpit
-    - cups
-    - lexicon
-    - squid
+#     - cockpit
+#     - cups
+#     - lexicon
+#     - squid
   Networking: &Networking
-    - etcd
-    - cloudflared
-    - glusterfs
-    - juicefs
-    - mole
-    - mutagen
-    - nebula
-    - ngrok
-    - privaxy
-    - pwnat
-    - rustscan
-    - ssl-proxy
+#     - etcd
+#     - cloudflared
+#     - glusterfs
+#     - juicefs
+#     - mole
+#     - mutagen
+#     - nebula
+#     - ngrok
+#     - privaxy
+#     - pwnat
+#     - rustscan
+#     - ssl-proxy
     - tailscale
-    - warp
+#     - warp
   Orchestration: &Orchestration
     - dagu
     - nomad
@@ -908,26 +908,26 @@ softwareGroups:
     - sake
     - waypoint
   PHP: &PHP
-    - composer
-    - php
+#     - composer
+#     - php
   Package-Management: &Package-Management
-    # - homebrew
-    # - whalebrew
-    - eget
-    - gup
-    - mise
-    - syncpack
-    - ultra
-    - zap
+#     # - homebrew
+#     # - whalebrew
+#     - eget
+#     - gup
+#     - mise
+#     - syncpack
+#     - ultra
+#     - zap
   Productivity-Desktop: &Productivity-Desktop
     - alt-tab
-    - amethyst
-    - espanso
-    # - fiscript
-    - languagetool
+#     - amethyst
+#     - espanso
+#     # - fiscript
+#     - languagetool
     - libreoffice
-    - microsoft-office
-    - notion
+#     - microsoft-office
+#     - notion
     # - obsidian
     - raycast
     - skhd
@@ -947,73 +947,73 @@ softwareGroups:
     - terminalizer
     - vhs
   Recording-Desktop: &Recording-Desktop
-    - flameshot
-    - kap
-    - peek
-    - sharex
+#     - flameshot
+#     - kap
+#     - peek
+#     - sharex
   Ruby: &Ruby
-    - ruby
+#     - ruby
   SSH: &SSH
-    - assh
-    - endlessh
-    - fabric
-    - fail2ban
-    - hss
-    - mosh
-    - openssh-server
-    - skm
-    - ssh-vault
-    - sshpass
-    - sshs
-    - sync-ssh-keys
-    - teleport
-    - tmate
-    - wetty
-    - wishlist
+#     - assh
+#     - endlessh
+#     - fabric
+#     - fail2ban
+#     - hss
+#     - mosh
+#     - openssh-server
+#     - skm
+#     - ssh-vault
+#     - sshpass
+#     - sshs
+#     - sync-ssh-keys
+#     - teleport
+#     - tmate
+#     - wetty
+#     - wishlist
   Security: &Security
-    - bitwarden-cli
-    - boringtun
-    - debsecan
+#     - bitwarden-cli
+#     - boringtun
+#     - debsecan
     - dotenv-vault
     - envchain
-    - envconsul
-    - envio
-    - onlykey-agent
-    - onlykey-cli
-    - openssl
-    - pony
-    - protonvpn-cli
-    - quark-engine
-    - scap-security-guide
-    - skate
+#     - envconsul
+#     - envio
+#     - onlykey-agent
+#     - onlykey-cli
+#     - openssl
+#     - pony
+#     - protonvpn-cli
+#     - quark-engine
+#     - scap-security-guide
+#     - skate
     - ssh-vault
-    - sshuttle
-    - teller
-    - vault
+#     - sshuttle
+#     - teller
+#     - vault
     - wireguard-client
     - wireguard-tools
-    - yubikey-manager
+#     - yubikey-manager
   Security-Desktop: &Security-Desktop
-    - bitwarden
-    - lulu
-    - portmaster
-    - privileges
-    - protonvpn
-    - santa
-    - swifty
-    - tunnelblick
-    - yubikey-authenticator
-    - yubikey-manager-qt
+#     - bitwarden
+#     - lulu
+#     - portmaster
+#     - privileges
+#     - protonvpn
+#     - santa
+#     - swifty
+#     - tunnelblick
+#     - yubikey-authenticator
+#     - yubikey-manager-qt
   Server: &Server
-    - cockpit
-    - cups
-    - easyengine
-    - haproxy
-    - netdata
-    - redis
-    - samba
-    - sftpgo
-    - wazuh
+#     - cockpit
+#     - cups
+#     - easyengine
+#     - haproxy
+#     - netdata
+#     - redis
+#     - samba
+#     - sftpgo
+#     - wazuh
   Shell-Scripting: &Shell-Scripting
     - argc
     - bashly
@@ -1023,103 +1023,103 @@ softwareGroups:
     - shellcheck
     - shfmt
   Social-Networking: &Social-Networking
-    - enola
-    - holehe
-    - social-analyzer
-    - t
+#     - enola
+#     - holehe
+#     - social-analyzer
+#     - t
   Hacking: &Hacking
-    - ettercap
-    - john
+#     - ettercap
+#     - john
   Sys-Admin: &Sys-Admin
-    - arping
-    - ctop
-    - fleetctl
-    - goaccess
-    - gtop
-    - htop
-    - ipmitool
-    - iproute2mac
-    - masscan
-    - plumber
-    - prefsniff
-    - pulumi
-    - rtop
-    - supervisor
-    - sysbench
-    - sysdig
-    - sysz
-    - upt
-    - winrm-cli
-    # - wireshark-cli
+#     - arping
+#     - ctop
+#     - fleetctl
+#     - goaccess
+#     - gtop
+#     - htop
+#     - ipmitool
+#     - iproute2mac
+#     - masscan
+#     - plumber
+#     - prefsniff
+#     - pulumi
+#     - rtop
+#     - supervisor
+#     - sysbench
+#     - sysdig
+#     - sysz
+#     - upt
+#     - winrm-cli
+#     # - wireshark-cli
   Sys-Admin-Desktop: &Sys-Admin-Desktop
-    - networkmanager
-    - pppc-utility
-    - quasar
-    - recuva
-    - sloth
-    - snitch
-    - wireshark
+#     - networkmanager
+#     - pppc-utility
+#     - quasar
+#     - recuva
+#     - sloth
+#     - snitch
+#     - wireshark
   Templates: &Templates
-    - confd
-    - consul-template
-    - cookiecutter
-    - gomplate
+#     - confd
+#     - consul-template
+#     - cookiecutter
+#     - gomplate
   Terraform: &Terraform
-    - aiac
-    - terraform
-    - tfenv
-    - tflint
+#     - aiac
+#     - terraform
+#     - tfenv
+#     - tflint
   Testing: &Testing
-    - allure
-    - appium
-    - molecule
+#     - allure
+#     - appium
+#     - molecule
   Transfer: &Transfer
-    - aria2
-    - croc
-    - dat
-    - ffsend
-    - gdown
-    - magic-wormhole
-    - nitroshare
-    - ots
-    - portal
-    - share
+#     - aria2
+#     - croc
+#     - dat
+#     - ffsend
+#     - gdown
+#     - magic-wormhole
+#     - nitroshare
+#     - ots
+#     - portal
+#     - share
     - syncthing
-    - lsyncd
-    - unison
+#     - lsyncd
+#     - unison
   Transfer-Desktop: &Transfer-Desktop
-    - dat-desktop
-    - google-drive
-    - motrix
+#     - dat-desktop
+#     - google-drive
+#     - motrix
     - qbittorrent
-    - sparkleshare
-    - webtorrent
+#     - sparkleshare
+#     - webtorrent
   Utilities: &Utilities
-    - blueutil
-    - nativefier
+#     - blueutil
+#     - nativefier
   Virtualization: &Virtualization
-    - d2vm
-    - distrobox
-    - kvm
-    - libguestfs-tools
-    - lxdc
-    - lxd-ui
-    - packer
+#     - d2vm
+#     - distrobox
+#     - kvm
+#     - libguestfs-tools
+#     - lxdc
+#     - lxd-ui
+#     - packer
     - quickemu
-    - vagrant
-    - vagrant-vmware-utility
-    - vermin
+#     - vagrant
+#     - vagrant-vmware-utility
+#     - vermin
   Virtualization-Desktop: &Virtualization-Desktop
     - docker-desktop
-    - gnome-boxes
+#     - gnome-boxes
     - parallels
     - quickgui
     - utm
-    - vagrant-manager
-    - virtualbox
-    - vmware
+#     - vagrant-manager
+#     - virtualbox
+#     - vmware
   Web-Development: &Web-Development
-    - angular-cli
+    # - angular-cli
     - autodoc
     - auto-install
     - browser-sync
@@ -1128,25 +1128,25 @@ softwareGroups:
     - capacitor
     - cloudflare-cli
     - coder
-    - cordova
+    # - cordova
     - deno
     - deta
     - devbox
     - devspace
-    - electron
+    # - electron
     - emma
     - fastify
     - fastlane
-    - feathers
-    - firebase
-    - flutter
-    - generator-ngx-rocket
+    # - feathers
+    # - firebase
+    # - flutter
+    # - generator-ngx-rocket
     - gfi
-    - gulp
+    # - gulp
     - hey
     - htmlhint
     - hugo
-    - ionic
+    # - ionic
     - imageoptim-cli
     - ipfs
     - ipfs-deploy
@@ -1162,7 +1162,7 @@ softwareGroups:
     - nativescript
     - ncc
     - nectar
-    - nest
+    # - nest
     - newman
     - ngrok
     - node-prune
@@ -1171,7 +1171,7 @@ softwareGroups:
     - npkill
     - npm-check # Similar to npm-check-updates
     - npm-check-updates
-    - nx
+    # - nx
     - oclif
     - osx-sign
     - package-size
@@ -1199,11 +1199,11 @@ softwareGroups:
     - typescript-to-lua
     - web-ext
     - websocat
-    - wordpressify
-    - wp-cli
+    # - wordpressify
+    # - wp-cli
     - wrangler
     - wrk
-    - yarn
+    # - yarn
     - zola
   Web-Development-Desktop: &Web-Development-Desktop
     # - altair
@@ -1220,7 +1220,7 @@ softwareGroups:
     - mockoon
     - mqttx
     - ndb
-    - phpmon
+    # - phpmon
     - pieces
     - pieces-os
     - pieces-cli
@@ -1233,9 +1233,9 @@ softwareGroups:
   _Basic: &_Basic
     - *CLI
     - *Essentials
-    - endlessh
-    - fail2ban
-    - openssh-server
+    # - endlessh
+    # - fail2ban
+    # - openssh-server
   _General-Purpose-Server: &_General-Purpose-Server
     - *CLI
     - *Database
@@ -1311,22 +1311,22 @@ softwareGroups:
     - upx
     - warp
     - wazuh
-    - windows-adk
+    # - windows-adk
     - windows-admin-center
     - windows-power-toys
   _Basic-Desktop: &_Basic-Desktop
     - *_Basic
     - *Essentials-Desktop
-    - firewall-applet
-    - firewall-config
+    # - firewall-applet
+    # - firewall-config
     - mas
-    - plymouth
-    - stacer
+    # - plymouth
+    # - stacer
   _Standard: &_Standard
     - *_Basic
     - *Backup
     - *Cloud-Storage
-    - bitwarden-cli
+    - 1password
   _Standard-Desktop-Filter:
     - discord
     - gitkraken
@@ -1346,11 +1346,11 @@ softwareGroups:
     - *Productivity-Desktop
     - *Recording-Desktop
     - *Virtualization-Desktop
-    - bitwarden
+    - 1password
     - bottles
-    - brave-browser
-    - mailspring
-    - protonvpn
+    # - brave-browser
+    # - mailspring
+    # - protonvpn
     - tailscale
     - warp
   _Full: &_Full
@@ -1415,11 +1415,11 @@ softwareGroups:
     - *Crypto-Desktop
     - *Database-Desktop
     - *Development-Tools-Desktop
-    - *E-mail-Desktop
+    # - *E-mail-Desktop
     - *Engineering-Desktop
     - *File-System-Desktop
     - *Finance-Desktop
-    - *Games-Desktop
+    # - *Games-Desktop
     - *Git-Desktop
     - *Kubernetes-Desktop
     - *Media-Desktop
@@ -1432,8 +1432,8 @@ softwareGroups:
     - *Virtualization-Desktop
     - *Web-Development-Desktop
   _ID-Desktop:
-    - browsersaurus
-    - monitorcontrol
+#     - browsersaurus
+#     - monitorcontrol
     - warp-terminal
   __hostname__base-basic-tmpl:
     - *_Basic
@@ -1492,100 +1492,100 @@ softwareGroups:
   __hostname__web-tmpl:
     - *Browsers-Desktop
   __hostname__work-tmpl: []
-  helmCharts:
-    - vector
-helm:
-  # helm repo add cloudflare-exporter https://lablabs.github.io/cloudflare-exporter/ && helm install cloudflare-exporter/cloudflare-exporter
-  - name: cloudflare-exporter
-    url: https://lablabs.github.io/cloudflare-exporter/
-    pkg: cloudflare-exporter/cloudflare-exporter
-  - name: juicefs
-    url: https://juicedata.github.io/charts/
-    pkg: juicefs/juicefs-csi-driver
-softwarePlugins:
-  alfred:
-    cmd: null
-    plugins:
-      - https://github.com/BalliAsghar/mailsy-alfred/releases/download/2.0.0/Mailsy.alfredworkflow
-  android-studio:
-    cmd: bash -c 'if ! sdkmanager --list_installed | grep "{PLUGIN}" > /dev/null; then echo y | sdkmanager --install "{PLUGIN}"; fi'
-    plugins:
-      - add-ons;addon-google_apis-google-24
-      # - build-tools;31.0.0
-      # - build-tools;32.0.0
-      # - build-tools;33.0.2
-      - build-tools;34.0.0
-      - cmake;3.22.1
-      - cmdline-tools;latest
-      - emulator
-      - extras;android;m2repository
-      - extras;google;auto
-      - extras;google;google_play_services
-      - extras;google;instantapps
-      - extras;google;m2repository
-      - extras;google;market_apk_expansion
-      - extras;google;market_licensing
-      - extras;google;simulators
-      - extras;google;webdriver
-      - extras;m2repository;com;android;support;constraint;constraint-layout-solver;1.0.2
-      - extras;m2repository;com;android;support;constraint;constraint-layout;1.0.2
-      - ndk-bundle
-      - platform-tools
-      # - platforms;android-31
-      # - platforms;android-32
-      # - platforms;android-33
-      - platforms;android-34
-      - skiaparser;3
-      # - sources;android-31
-      # - sources;android-32
-      # - sources;android-33
-      - sources;android-34
-      # - system-images;android-31;default;x86_64
-      # - system-images;android-32;android-desktop;x86_64
-      # - system-images;android-33-ext5;google_apis_playstore;arm64-v8a                                
-      # - system-images;android-33-ext5;google_apis_playstore;x86_64
-      # - system-images;android-33;android-automotive;arm64-v8a
-      # - system-images;android-33;android-automotive;x86_64
-      # - system-images;android-33;android-desktop;arm64-v8a
-      # - system-images;android-33;android-desktop;x86_64
-      # - system-images;android-33;android-tv;arm64-v8a
-      # - system-images;android-33;android-tv;x86
-      # - system-images;android-33;android-wear;arm64-v8a
-      # - system-images;android-33;android-wear;x86_64
-      # - system-images;android-33;aosp_atd;arm64-v8a
-      # - system-images;android-33;aosp_atd;x86_64
-      # - system-images;android-33;default;arm64-v8a
-      # - system-images;android-33;default;x86_64
-      # - system-images;android-33;google-tv;arm64-v8a
-      # - system-images;android-33;google-tv;x86
-      # - system-images;android-33;google_apis;arm64-v8a
-      # - system-images;android-33;google_apis;x86_64
-      # - system-images;android-33;google_apis_playstore;arm64-v8a
-      # - system-images;android-33;google_apis_playstore;x86_64
-      # - system-images;android-33;google_atd;arm64-v8a
-      # - system-images;android-33;google_atd;x86_64
-      - system-images;android-34-ext8;google_apis_playstore;arm64-v8a
-      - system-images;android-34-ext8;google_apis_playstore;x86_64
-      - system-images;android-34;android-tv;arm64-v8a
-      - system-images;android-34;android-tv;x86
-      - system-images;android-34;default;arm64-v8a
-      - system-images;android-34;default;x86_64
-      - system-images;android-34;google-tv;arm64-v8a
-      - system-images;android-34;google-tv;x86
-      - system-images;android-34;google_apis;arm64-v8a
-      - system-images;android-34;google_apis;x86_64
-      - system-images;android-34;google_apis_playstore;arm64-v8a
-      - system-images;android-34;google_apis_playstore;x86_64
-      # - system-images;android-TiramisuPrivacySandbox;google_apis;arm64-v8a
-      # - system-images;android-TiramisuPrivacySandbox;google_apis;x86_64
-      # - system-images;android-TiramisuPrivacySandbox;google_apis_playstore;arm64-v8a
-      # - system-images;android-TiramisuPrivacySandbox;google_apis_playstore;x86_64
-      # - system-images;android-UpsideDownCakePrivacySandbox;google_apis_playstore;arm64-v8a
-      # - system-images;android-UpsideDownCakePrivacySandbox;google_apis_playstore;x86_64
-  composer:
-    cmd: null
-    plugins:
-      - deployer/deployer
+#   helmCharts:
+#     - vector
+# helm:
+#   # helm repo add cloudflare-exporter https://lablabs.github.io/cloudflare-exporter/ && helm install cloudflare-exporter/cloudflare-exporter
+#   - name: cloudflare-exporter
+#     url: https://lablabs.github.io/cloudflare-exporter/
+#     pkg: cloudflare-exporter/cloudflare-exporter
+#   - name: juicefs
+#     url: https://juicedata.github.io/charts/
+#     pkg: juicefs/juicefs-csi-driver
+# softwarePlugins:
+#   alfred:
+#     cmd: null
+#     plugins:
+#       - https://github.com/BalliAsghar/mailsy-alfred/releases/download/2.0.0/Mailsy.alfredworkflow
+#   android-studio:
+#     cmd: bash -c 'if ! sdkmanager --list_installed | grep "{PLUGIN}" > /dev/null; then echo y | sdkmanager --install "{PLUGIN}"; fi'
+#     plugins:
+#       - add-ons;addon-google_apis-google-24
+#       # - build-tools;31.0.0
+#       # - build-tools;32.0.0
+#       # - build-tools;33.0.2
+#       - build-tools;34.0.0
+#       - cmake;3.22.1
+#       - cmdline-tools;latest
+#       - emulator
+#       - extras;android;m2repository
+#       - extras;google;auto
+#       - extras;google;google_play_services
+#       - extras;google;instantapps
+#       - extras;google;m2repository
+#       - extras;google;market_apk_expansion
+#       - extras;google;market_licensing
+#       - extras;google;simulators
+#       - extras;google;webdriver
+#       - extras;m2repository;com;android;support;constraint;constraint-layout-solver;1.0.2
+#       - extras;m2repository;com;android;support;constraint;constraint-layout;1.0.2
+#       - ndk-bundle
+#       - platform-tools
+#       # - platforms;android-31
+#       # - platforms;android-32
+#       # - platforms;android-33
+#       - platforms;android-34
+#       - skiaparser;3
+#       # - sources;android-31
+#       # - sources;android-32
+#       # - sources;android-33
+#       - sources;android-34
+#       # - system-images;android-31;default;x86_64
+#       # - system-images;android-32;android-desktop;x86_64
+#       # - system-images;android-33-ext5;google_apis_playstore;arm64-v8a
+#       # - system-images;android-33-ext5;google_apis_playstore;x86_64
+#       # - system-images;android-33;android-automotive;arm64-v8a
+#       # - system-images;android-33;android-automotive;x86_64
+#       # - system-images;android-33;android-desktop;arm64-v8a
+#       # - system-images;android-33;android-desktop;x86_64
+#       # - system-images;android-33;android-tv;arm64-v8a
+#       # - system-images;android-33;android-tv;x86
+#       # - system-images;android-33;android-wear;arm64-v8a
+#       # - system-images;android-33;android-wear;x86_64
+#       # - system-images;android-33;aosp_atd;arm64-v8a
+#       # - system-images;android-33;aosp_atd;x86_64
+#       # - system-images;android-33;default;arm64-v8a
+#       # - system-images;android-33;default;x86_64
+#       # - system-images;android-33;google-tv;arm64-v8a
+#       # - system-images;android-33;google-tv;x86
+#       # - system-images;android-33;google_apis;arm64-v8a
+#       # - system-images;android-33;google_apis;x86_64
+#       # - system-images;android-33;google_apis_playstore;arm64-v8a
+#       # - system-images;android-33;google_apis_playstore;x86_64
+#       # - system-images;android-33;google_atd;arm64-v8a
+#       # - system-images;android-33;google_atd;x86_64
+#       - system-images;android-34-ext8;google_apis_playstore;arm64-v8a
+#       - system-images;android-34-ext8;google_apis_playstore;x86_64
+#       - system-images;android-34;android-tv;arm64-v8a
+#       - system-images;android-34;android-tv;x86
+#       - system-images;android-34;default;arm64-v8a
+#       - system-images;android-34;default;x86_64
+#       - system-images;android-34;google-tv;arm64-v8a
+#       - system-images;android-34;google-tv;x86
+#       - system-images;android-34;google_apis;arm64-v8a
+#       - system-images;android-34;google_apis;x86_64
+#       - system-images;android-34;google_apis_playstore;arm64-v8a
+#       - system-images;android-34;google_apis_playstore;x86_64
+#       # - system-images;android-TiramisuPrivacySandbox;google_apis;arm64-v8a
+#       # - system-images;android-TiramisuPrivacySandbox;google_apis;x86_64
+#       # - system-images;android-TiramisuPrivacySandbox;google_apis_playstore;arm64-v8a
+#       # - system-images;android-TiramisuPrivacySandbox;google_apis_playstore;x86_64
+#       # - system-images;android-UpsideDownCakePrivacySandbox;google_apis_playstore;arm64-v8a
+#       # - system-images;android-UpsideDownCakePrivacySandbox;google_apis_playstore;x86_64
+#   composer:
+#     cmd: null
+#     plugins:
+#       - deployer/deployer
   docker:
     cmd: bash -c 'if ! docker extension list | grep "$(echo "{PLUGIN}" | sed 's/\:.*//')" > /dev/null; then echo y | docker extension install "{PLUGIN}"; fi'
     plugins:
@@ -1602,30 +1602,30 @@ softwarePlugins:
       - snyk/snyk-docker-desktop-extension:0.7.4
       - tailscale/docker-extension:1.0.1
     when: docker extension list &> /dev/null
-  docker-images:
-    cmd: bash -c 'if ! docker image list | awk \'{print $1 " " $2}\' | grep "{PLUGIN}" > /dev/null; then docker pull "{PLUGIN}"; fi'
-    plugins:
-      - alpine:latest
-      - postgres:10
-      - postgres:12
-      - postgres:latest
-      - ubuntu:latest
+#   docker-images:
+#     cmd: bash -c 'if ! docker image list | awk \'{print $1 " " $2}\' | grep "{PLUGIN}" > /dev/null; then docker pull "{PLUGIN}"; fi'
+#     plugins:
+#       - alpine:latest
+#       - postgres:10
+#       - postgres:12
+#       - postgres:latest
+#       - ubuntu:latest
   docker-plugins:
     cmd: bash -c 'if ! docker plugin ls | grep "{PLUGIN}" > /dev/null; then echo y | docker plugin install "{PLUGIN}"; fi'
     plugins:
       # TODO - Add https://github.com/ContainX/docker-volume-netshare
-      - juicedata/juicefs
-      - n0r1skcom/docker-volume-cephfs
-      - sapk/plugin-rclone
+      # - juicedata/juicefs
+      # - n0r1skcom/docker-volume-cephfs
+      # - sapk/plugin-rclone
       - vieux/sshfs
     when: docker plugin ls &> /dev/null
-  dotnet:
-    cmd: bash -c 'if ! dotnet tool list -g | grep "{PLUGIN}" > /dev/null; then dotnet tool install -g "{PLUGIN}"; fi'
-    plugins:
-      - Cake.Tool
-      - microsoft.cst.attacksurfaceanalyzer.cli
-      - dotnet-format
-      - git-credential-manager
+#   dotnet:
+#     cmd: bash -c 'if ! dotnet tool list -g | grep "{PLUGIN}" > /dev/null; then dotnet tool install -g "{PLUGIN}"; fi'
+#     plugins:
+#       - Cake.Tool
+#       - microsoft.cst.attacksurfaceanalyzer.cli
+#       - dotnet-format
+#       - git-credential-manager
   gcloud:
     cmd: bash -c 'if ! gcloud components list | grep "^..Installed.*{PLUGIN}" > /dev/null; then echo "Installing.." && gcloud components install --quiet "{PLUGIN}"; fi'
     plugins:
@@ -1645,80 +1645,80 @@ softwarePlugins:
       - dlvhdr/gh-dash
       - github/gh-net
       - mislav/gh-cp
-  intellij-idea-ce:
-    cmd: bash -c 'if [ ! -f "${XDG_CACHE_HOME:-$HOME/.cache}/install.doctor/intellij-idea-ce" ] || ! cat "${XDG_CACHE_HOME:-$HOME/.cache}/install.doctor/intellij-idea-ce" | grep "${PLUGIN}" &> /dev/null; then idea installPlugins "{PLUGIN}" && mkdir -p "${XDG_CACHE_HOME:-$HOME/.cache}/install.doctor" && echo "{PLUGIN}" >> "${XDG_CACHE_HOME:-$HOME/.cache}/install.doctor/intellij-idea-ce"; fi'
-    plugins:
-      - AngularJS
-      - app.pieces.plugins.jetbrains
-      - com.dmarcotte.handlebars
-      - com.github.copilot
-      - com.github.masahirosuzuka.PhoneGapIntelliJPlugin
-      - com.jetbrains.edu
-      - com.jetbrains.rust
-      - com.wakatime.intellij.plugin
-      - org.intellij.plugins.hcl
-      - com.intellij.lang.jsgraphql
-      - com.chrisrm.idea.MaterialThemeUI
-      - name.kropp.intellij.makefile
-      - com.genymotion.idea
-      - Docker
-      - io.flutter
-      - Dart
-      - Jetbrains TeamCity Plugin
-      - com.wakatime.intellij.plugin
-      - mobi.hsz.idea.gitignore
-      - NodeJS
-      - org.editorconfig.editorconfigjetbrains
-      - org.intellij.plugins.markdown
-      - org.jetbrains.completion.full.line
-      - org.jetbrains.plugins.go-template
-  helm:
-    cmd: bash -c '{PLUGIN}'
-    plugins:
-      - if ! helm plugin list | grep "Preview helm upgrade changes as a diff" > /dev/null; then helm plugin install https://github.com/databus23/helm-diff; fi
-      - if ! helm plugin list | grep "Query at a given interval a Prometheus, ElasticSearch or Sentry instance." > /dev/null; then helm plugin install https://github.com/ContainerSolutions/helm-monitor; fi
-      - if ! helm plugin list | grep "This plugin provides secrets values encryption for Helm charts secure storing" > /dev/null; then helm plugin install https://github.com/jkroepke/helm-secrets; fi
-  krew:
-    cmd: bash -c 'if ! kubectl krew list | grep "^{PLUGIN}$" > /dev/null; then if ! kubectl krew search "{PLUGIN}" | grep " unavailable on " > /dev/null; then kubectl krew install "{PLUGIN}"; else echo "UNSUPPORTED PLATFORM - {PLUGIN} is not supported on the current platform"; fi; fi'
-    plugins:
-      - access-matrix
-      - cert-manager
-      - cost
-      - ctx
-      - datree
-      - deprecations
-      # flyte fails to install on macOS arm64
-      # W1105 install.go:164] failed to install plugin "flyte": plugin "flyte" does not offer installation for this platform
-      - flyte
-      - get-all
-      - graph
-      # ingress-nginx fails to install on macOS arm64
-      # W1105 install.go:164] failed to install plugin "ingress-nginx": plugin "ingress-nginx" does not offer installation for this platform
-      - ingress-nginx
-      - karmada
-      - konfig
-      - kyverno
-      - liqo
-      - minio
-      - modify-secret
-      - neat
-      - node-shell
-      - ns
-      - oidc-login
-      - resource-capacity
-      - score
-      - sniff
-      - tail
-      - tree
-      - tunnel
-      - view-allocations
-      # virt fails to install on macOS arm64
-      # W1105 install.go:164] failed to install plugin "virt": plugin "virt" does not offer installation for this platform
-      - virt
-      # warp fails to install on macOS arm64
-      # W1105 install.go:164] failed to install plugin "warp": plugin "warp" does not offer installation for this platform
-      - warp
-      - who-can
+#   intellij-idea-ce:
+#     cmd: bash -c 'if [ ! -f "${XDG_CACHE_HOME:-$HOME/.cache}/install.doctor/intellij-idea-ce" ] || ! cat "${XDG_CACHE_HOME:-$HOME/.cache}/install.doctor/intellij-idea-ce" | grep "${PLUGIN}" &> /dev/null; then idea installPlugins "{PLUGIN}" && mkdir -p "${XDG_CACHE_HOME:-$HOME/.cache}/install.doctor" && echo "{PLUGIN}" >> "${XDG_CACHE_HOME:-$HOME/.cache}/install.doctor/intellij-idea-ce"; fi'
+#     plugins:
+#       - AngularJS
+#       - app.pieces.plugins.jetbrains
+#       - com.dmarcotte.handlebars
+#       - com.github.copilot
+#       - com.github.masahirosuzuka.PhoneGapIntelliJPlugin
+#       - com.jetbrains.edu
+#       - com.jetbrains.rust
+#       - com.wakatime.intellij.plugin
+#       - org.intellij.plugins.hcl
+#       - com.intellij.lang.jsgraphql
+#       - com.chrisrm.idea.MaterialThemeUI
+#       - name.kropp.intellij.makefile
+#       - com.genymotion.idea
+#       - Docker
+#       - io.flutter
+#       - Dart
+#       - Jetbrains TeamCity Plugin
+#       - com.wakatime.intellij.plugin
+#       - mobi.hsz.idea.gitignore
+#       - NodeJS
+#       - org.editorconfig.editorconfigjetbrains
+#       - org.intellij.plugins.markdown
+#       - org.jetbrains.completion.full.line
+#       - org.jetbrains.plugins.go-template
+#   helm:
+#     cmd: bash -c '{PLUGIN}'
+#     plugins:
+#       - if ! helm plugin list | grep "Preview helm upgrade changes as a diff" > /dev/null; then helm plugin install https://github.com/databus23/helm-diff; fi
+#       - if ! helm plugin list | grep "Query at a given interval a Prometheus, ElasticSearch or Sentry instance." > /dev/null; then helm plugin install https://github.com/ContainerSolutions/helm-monitor; fi
+#       - if ! helm plugin list | grep "This plugin provides secrets values encryption for Helm charts secure storing" > /dev/null; then helm plugin install https://github.com/jkroepke/helm-secrets; fi
+#   krew:
+#     cmd: bash -c 'if ! kubectl krew list | grep "^{PLUGIN}$" > /dev/null; then if ! kubectl krew search "{PLUGIN}" | grep " unavailable on " > /dev/null; then kubectl krew install "{PLUGIN}"; else echo "UNSUPPORTED PLATFORM - {PLUGIN} is not supported on the current platform"; fi; fi'
+#     plugins:
+#       - access-matrix
+#       - cert-manager
+#       - cost
+#       - ctx
+#       - datree
+#       - deprecations
+#       # flyte fails to install on macOS arm64
+#       # W1105 install.go:164] failed to install plugin "flyte": plugin "flyte" does not offer installation for this platform
+#       - flyte
+#       - get-all
+#       - graph
+#       # ingress-nginx fails to install on macOS arm64
+#       # W1105 install.go:164] failed to install plugin "ingress-nginx": plugin "ingress-nginx" does not offer installation for this platform
+#       - ingress-nginx
+#       - karmada
+#       - konfig
+#       - kyverno
+#       - liqo
+#       - minio
+#       - modify-secret
+#       - neat
+#       - node-shell
+#       - ns
+#       - oidc-login
+#       - resource-capacity
+#       - score
+#       - sniff
+#       - tail
+#       - tree
+#       - tunnel
+#       - view-allocations
+#       # virt fails to install on macOS arm64
+#       # W1105 install.go:164] failed to install plugin "virt": plugin "virt" does not offer installation for this platform
+#       - virt
+#       # warp fails to install on macOS arm64
+#       # W1105 install.go:164] failed to install plugin "warp": plugin "warp" does not offer installation for this platform
+#       - warp
+#       - who-can
   obsidian:
     cmd: |
       #!/usr/bin/env bash
@@ -1823,127 +1823,127 @@ softwarePlugins:
       - https://github.com/zsviczian/obsidian-excalidraw-plugin
   # raycast: Manually install Raycast extensions - no CLI method
   steampipe:
-    cmd: bash -c 'if [ ! -f /tmp/steampipe-plugin-list ]; then steampipe plugin list > /tmp/steampipe-plugin-list; fi && if ! cat /tmp/steampipe-plugin-list | grep "{PLUGIN}" > /dev/null; then steampipe plugin install "{PLUGIN}"; fi'
-    plugins:
-      - algolia
-      - aws
-      - azure
-      - azuread
-      - azuredevops
-      - bitbucket
-      - buildkite
-      - cloudflare
-      - code
-      - config
-      - consul
-      - csv
-      - digitalocean
-      - docker
-      - gcp
-      - github
-      - googledirectory
-      - googlesheets
-      - googleworkspace
-      - grafana
-      - heroku
-      - hibp
-      - imap
-      - ipinfo
-      - jira
-      - jumpcloud
-      - kubernetes
-      - ldap
-      - linkedin
-      - net
-      - nomad
-      - openai
-      - prometheus
-      - reddit
-      - rss
-      - sentry
-      - shopify
-      - slack
-      - stripe
-      - tailscale
-      - terraform
-      - trivy
-      - twilio
-      - whois
-      - ernw/openstack
-      - theapsgroup/gitlab
-      - theapsgroup/keycloak
-      - theapsgroup/vault
-      - twitter
-    update: steampipe plugin update --all
+#     cmd: bash -c 'if [ ! -f /tmp/steampipe-plugin-list ]; then steampipe plugin list > /tmp/steampipe-plugin-list; fi && if ! cat /tmp/steampipe-plugin-list | grep "{PLUGIN}" > /dev/null; then steampipe plugin install "{PLUGIN}"; fi'
+#     plugins:
+#       - algolia
+#       - aws
+#       - azure
+#       - azuread
+#       - azuredevops
+#       - bitbucket
+#       - buildkite
+#       - cloudflare
+#       - code
+#       - config
+#       - consul
+#       - csv
+#       - digitalocean
+#       - docker
+#       - gcp
+#       - github
+#       - googledirectory
+#       - googlesheets
+#       - googleworkspace
+#       - grafana
+#       - heroku
+#       - hibp
+#       - imap
+#       - ipinfo
+#       - jira
+#       - jumpcloud
+#       - kubernetes
+#       - ldap
+#       - linkedin
+#       - net
+#       - nomad
+#       - openai
+#       - prometheus
+#       - reddit
+#       - rss
+#       - sentry
+#       - shopify
+#       - slack
+#       - stripe
+#       - tailscale
+#       - terraform
+#       - trivy
+#       - twilio
+#       - whois
+#       - ernw/openstack
+#       - theapsgroup/gitlab
+#       - theapsgroup/keycloak
+#       - theapsgroup/vault
+#       - twitter
+#     update: steampipe plugin update --all
   teams:
     cmd: echo "Teams plugins are installed via the Teams app"
     plugins:
       - name: Pieces
         plugin: https://teams.microsoft.com/l/app/789f23b3-d882-45ca-b3a3-de7f850656ea
-  vagrant:
-    cmd: bash -c 'if ! vagrant plugin list | grep "{PLUGIN}" > /dev/null; then vagrant plugin install "{PLUGIN}"; fi'
-    plugins:
-      - vagrant-bindfs
-      - vagrant-digitalocean
-      - vagrant-google
-      - vagrant-hostmanager
-      - vagrant-libvirt
-      # Dependency issues
-      # - vagrant-openstack-provider
-      # - vagrant-openstack
-      - vagrant-parallels
-      # Dependency issue
-      # - vagrant-proxmox
-      - vagrant-share
-      - vagrant-vbguest
-      - vagrant-vmware-desktop
-      - vagrant-xenserver
+#   vagrant:
+#     cmd: bash -c 'if ! vagrant plugin list | grep "{PLUGIN}" > /dev/null; then vagrant plugin install "{PLUGIN}"; fi'
+#     plugins:
+#       - vagrant-bindfs
+#       - vagrant-digitalocean
+#       - vagrant-google
+#       - vagrant-hostmanager
+#       - vagrant-libvirt
+#       # Dependency issues
+#       # - vagrant-openstack-provider
+#       # - vagrant-openstack
+#       - vagrant-parallels
+#       # Dependency issue
+#       # - vagrant-proxmox
+#       - vagrant-share
+#       - vagrant-vbguest
+#       - vagrant-vmware-desktop
+#       - vagrant-xenserver
   visual-studio:
     cmd: null # VSIXInstaller.exe can be used to install a local file. The first step is to download the plugin file. https://gist.github.com/ScottHutchinson/b22339c3d3688da5c9b477281e258400
     plugins:
       - GitHub.copilotvs
       - TemplateStudio.TemplateStudioForWinUICs
       - lepo.wpf-ui
-  vim:
-    plugins:
-      - https://github.com/airblade/vim-gitgutter.git
-      - https://github.com/dense-analysis/ale.git
-      - https://github.com/editorconfig/editorconfig-vim.git
-      - https://github.com/ekalinin/dockerfile.vim.git
-      - https://github.com/fatih/vim-go.git
-      - https://github.com/github/copilot.vim
-      - https://github.com/hdima/python-syntax.git
-      - https://github.com/junegunn/fzf.git
-      - https://github.com/junegunn/fzf.vim.git
-      - https://github.com/kristijanhusak/vim-carbon-now-sh.git
-      - https://github.com/mxw/vim-jsx.git
-      - https://github.com/Yggdroot/indentLine
-      - https://github.com/nanotee/zoxide.vim.git
-      - https://github.com/pangloss/vim-javascript.git
-      - https://github.com/pearofducks/ansible-vim.git
-      - https://github.com/plasticboy/vim-markdown.git
-      - https://github.com/sheerun/vim-polyglot.git
-      - https://github.com/prettier/vim-prettier.git
-      - https://github.com/ryanoasis/vim-devicons.git
-      - https://github.com/scrooloose/nerdtree.git
-      - https://github.com/stanangeloff/php.vim.git
-      - https://github.com/terryma/vim-multiple-cursors.git
-      - https://github.com/tpope/vim-fugitive.git
-      - https://github.com/tpope/vim-sensible.git
-      - https://github.com/justinmk/vim-sneak.git
-      - https://github.com/tpope/vim-surround.git
-      - https://github.com/vim-airline/vim-airline.git
-      - https://github.com/vim-syntastic/syntastic.git
-      - https://github.com/leafgarland/typescript-vim.git
+#   vim:
+#     plugins:
+#       - https://github.com/airblade/vim-gitgutter.git
+#       - https://github.com/dense-analysis/ale.git
+#       - https://github.com/editorconfig/editorconfig-vim.git
+#       - https://github.com/ekalinin/dockerfile.vim.git
+#       - https://github.com/fatih/vim-go.git
+#       - https://github.com/github/copilot.vim
+#       - https://github.com/hdima/python-syntax.git
+#       - https://github.com/junegunn/fzf.git
+#       - https://github.com/junegunn/fzf.vim.git
+#       - https://github.com/kristijanhusak/vim-carbon-now-sh.git
+#       - https://github.com/mxw/vim-jsx.git
+#       - https://github.com/Yggdroot/indentLine
+#       - https://github.com/nanotee/zoxide.vim.git
+#       - https://github.com/pangloss/vim-javascript.git
+#       - https://github.com/pearofducks/ansible-vim.git
+#       - https://github.com/plasticboy/vim-markdown.git
+#       - https://github.com/sheerun/vim-polyglot.git
+#       - https://github.com/prettier/vim-prettier.git
+#       - https://github.com/ryanoasis/vim-devicons.git
+#       - https://github.com/scrooloose/nerdtree.git
+#       - https://github.com/stanangeloff/php.vim.git
+#       - https://github.com/terryma/vim-multiple-cursors.git
+#       - https://github.com/tpope/vim-fugitive.git
+#       - https://github.com/tpope/vim-sensible.git
+#       - https://github.com/justinmk/vim-sneak.git
+#       - https://github.com/tpope/vim-surround.git
+#       - https://github.com/vim-airline/vim-airline.git
+#       - https://github.com/vim-syntastic/syntastic.git
+#       - https://github.com/leafgarland/typescript-vim.git
   # Handled by script that looks at ~/.config/Code/extensions.json
-  # vscode:
-  #   cmd: bash -c 'if ! code --list-extensions | grep "{PLUGIN}" > /dev/null; then code --install-extension "{PLUGIN}"; fi'
-  #   plugins:
-  #     - GitHub.copilot
-  # vscodium:
-  #   cmd: bash -c 'if ! codium --list-extensions | grep "{PLUGIN}" > /dev/null; then codium --install-extension "{PLUGIN}"; fi'
-  #   plugins:
-  #     - GitHub.copilot
+  vscode:
+    cmd: bash -c 'if ! code --list-extensions | grep "{PLUGIN}" > /dev/null; then code --install-extension "{PLUGIN}"; fi'
+    plugins:
+      - GitHub.copilot
+  vscodium:
+    cmd: bash -c 'if ! codium --list-extensions | grep "{PLUGIN}" > /dev/null; then codium --install-extension "{PLUGIN}"; fi'
+    plugins:
+      - GitHub.copilot
 qubes:
   dom0Packages:
     - bismuth
