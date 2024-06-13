@@ -1338,6 +1338,7 @@ softwareGroups:
     - yubico-authenticator
     - zoom
   _Standard-Desktop: &_Standard-Desktop
+    - *_Standard
     - *_Basic-Desktop
     - *Backup-Desktop
     - *Communication-Desktop
@@ -1346,6 +1347,17 @@ softwareGroups:
     - *Productivity-Desktop
     - *Recording-Desktop
     - *Virtualization-Desktop
+    - *AI-Desktop
+    - *Browsers-Desktop
+    - *Development-Tools-Desktop
+    - *Git-Desktop
+    - *Kubernetes-Desktop
+    - *Media-Desktop
+    - *Misc-Desktop
+    - *Productivity-Desktop
+    - *Recording-Desktop
+    - *Virtualization-Desktop
+    - *Web-Development-Desktop
     - 1password
     - bottles
     # - brave-browser
@@ -1353,10 +1365,11 @@ softwareGroups:
     # - protonvpn
     - tailscale
     - warp
+    - warp-terminal
   _Full: &_Full
     - *_Standard
     - *AI
-    - *Android
+    # - *Android
     - *Ansible
     - *Backup
     - *Browsers
@@ -1371,12 +1384,12 @@ softwareGroups:
     - *Docker
     - *E-mail
     - *File-System
-    - *Finance
+    # - *Finance
     - *Git
     - *Git-Project-Tools
-    - *Go
-    - *Hacking
-    - *Home
+    # - *Go
+    # - *Hacking
+    # - *Home
     - *Kubernetes
     - *Linting
     - *Logging
@@ -1386,7 +1399,7 @@ softwareGroups:
     - *Network-Enabled
     - *Networking
     - *Orchestration
-    - *PHP
+    # - *PHP
     - *Package-Management
     - *Python
     - *Recording
@@ -1395,7 +1408,7 @@ softwareGroups:
     - *Security
     - *Server
     - *Shell-Scripting
-    - *Social-Networking
+    # - *Social-Networking
     - *Sys-Admin
     - *Terraform
     - *Templates
@@ -1408,7 +1421,7 @@ softwareGroups:
     - *_Full
     - *_Standard-Desktop
     - *AI-Desktop
-    - *Android-Desktop
+    # - *Android-Desktop
     - *Backup-Desktop
     - *Browsers-Desktop
     - *Communication-Desktop
