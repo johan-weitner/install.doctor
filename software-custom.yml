@@ -1,0 +1,159 @@
+---
+
+# - entr
+# - ddrescue
+# - fastfetch
+# - gotty
+# - nethogs
+# - pet
+# - ps_mem
+# - cheat.sh
+# - diff-so-fancy
+# - yazi
+# - alacritty
+# - rmlint
+# - ncurses
+# - btop
+# - duplicacy
+# - micro
+# - zinit
+# - starship
+# - zellij
+# - autojump
+# - todo.sh
+# - dnotes
+# - watson
+# - zsh-navigation-tools
+# - gitbutler
+# - typora
+# - snyk-cli
+# - Files
+# - Explorer Patcher
+# - Openshell
+# - winutil
+# - Biscuit
+# - RunKit
+# - RainDrop.io
+# - Fleeting Notes
+# - Yabai
+# - Voidtools Everything
+# - Bacula
+# - Arc browser
+# -
+
+
+
+
+
+
+softwarePackages:
+  arc-browser:
+    _bin: Arc
+    _desc: "New gen web browser"
+    _docs: https://resources.arc.net/hc/en-us
+    _home: https://arc.net/
+    _github: false
+    _name: Arc Browser
+    _short: "New gen web browser"
+    binary:mac: https://releases.arc.net/release/Arc-latest.dmg
+    binary:windows: https://releases.arc.net/windows/ArcInstaller.exe
+  fastfetch:
+    _bin: fastfetch
+    _desc: "Fastfetch is a neofetch-like tool for fetching system information and displaying them in a pretty way"
+    _docs: https://github.com/fastfetch-cli/fastfetch
+    _home: https://github.com/fastfetch-cli/fastfetch
+    _github: https://github.com/fastfetch-cli/fastfetch
+    _name: Fastfetch
+    _short: "Fastfetch is a neofetch-like tool for fetching system information and displaying them in a pretty way"
+    brew: fastfetch
+    port: fastfetch
+    scoop: fastfetch
+    winget: fastfetch
+    pacman: fastfetch
+    pkg: fastfetch
+  gotty:
+    _bin: gotty
+    _desc: "Share your terminal as a web application"
+    _docs: https://github.com/yudai/gotty
+    _home: https://github.com/yudai/gotty
+    _github: https://github.com/yudai/gotty
+    _name: Gotty
+    _short: "Share your terminal as a web application"
+    brew: yudai/gotty/gotty
+    go: github.com/yudai/gotty
+  pet:
+    _bin: gotty
+    _desc: "Simple command-line snippet manager, written in Go"
+    _docs: https://github.com/knqyf263/pet
+    _home: https://github.com/knqyf263/pet
+    _github: https://github.com/knqyf263/pet
+    _name: Gotty
+    _short: "Simple command-line snippet manager, written in Go"
+    brew: knqyf263/pet/pet
+    rpm: https://github.com/knqyf263/pet/releases/download/v0.3.0/pet_0.3.0_linux_amd64.rpm
+    wget: https://github.com/knqyf263/pet/releases/download/v0.3.6/pet_0.3.6_linux_amd64.deb
+    dpkg: pet_0.3.6_linux_amd64.deb
+    yaort: pet-bin
+  ps_mem:
+    _bin: ps_mem
+    _desc: "A utility to accurately report the core memory usage for a program"
+    _docs: https://github.com/pixelb/ps_mem
+    _home: https://github.com/pixelb/ps_mem
+    _github: https://github.com/pixelb/ps_mem
+    _name: ps_mem
+    _short: "A utility to accurately report the core memory usage for a program"
+    pip: ps_mem
+    rpm: ps_mem
+    deb: ps_mem
+  yazi:
+    _bin: yazi
+    _deps:
+      - file
+      - nerd-fonts
+      - ffmpegthumbnailer
+      - unar
+      - jq
+      - poppler
+      - fd
+      - rg
+      - fzf
+      - zoxide
+      - xclip
+    _desc: "Blazing fast terminal file manager written in Rust, based on async I/O"
+    _docs: https://yazi-rs.github.io/docs/installation
+    _home: https://yazi-rs.github.io/
+    _github: https://github.com/sxyazi/yazi
+    _name: Yazi
+    _short: "Blazing fast terminal file manager written in Rust, based on async I/O"
+    pacman: yazi
+    brew: yazi
+    port: yazi
+    pkgin: yazi
+    scoop: yazi
+    cargo:
+      - yazi-fm
+      - yazi-cli
+  alacritty:
+    _bin: Alacritty
+    _desc: "Alacritty is a modern terminal emulator that comes with sensible defaults, but allows for extensive configuration"
+    _docs: https://alacritty.org/config-alacritty.html
+    _home: https://alacritty.org
+    _github: https://github.com/alacritty/alacritty
+    _name: ps_mem
+    _short: "Alacritty is a modern terminal emulator that comes with sensible defaults, but allows for extensive configuration"
+    cask: alacritty
+    cargo: alacritty
+  rmlint:
+    _bin: rmlint
+    _desc: "Clean file duplicates"
+    _docs: https://rmlint.readthedocs.io/en/latest/install.html
+    _home: https://rmlint.readthedocs.io/
+    _github: https://github.com/sahib/rmlint
+    _name: rmlint
+    _short: "Clean file duplicates"
+    dnf: rmlint
+    pacman: rmlint
+    brew: rmlint
+
+
+
