@@ -271,6 +271,33 @@ softwarePackages:
     _name: Airdrop CLI
     _short: "airdrop-cli is a command-line tool for transferring files using Apple's AirDrop feature.                                                                                                                  "
     brew:darwin: vldmrkl/formulae/airdrop-cli
+  airtame:
+    _app: Airtame.app
+    _bin: airtame
+    _github: false
+    _name: Airtame
+    cask: airtame
+    choco: airtame
+    flatpak: com.airtame.Client
+    snap: airtame-application
+  alda:
+    _bin: alda
+    _desc: "Alda is a music programming language for musicians to write and play music. It allows users to compose music using text-based commands and play it back instantly. Alda is designed to be simple and      \nintuitive, making it easy for both beginners and experienced musicians to create music. It supports various musical elements like notes, rhythms, chords, and more. The code written in Alda can be saved \nas text files, making it easy to share and collaborate on musical compositions. It is a versatile tool for music enthusiasts looking to experiment with music composition in a unique way.                "
+    _github: https://github.com/alda-lang/alda
+    _name: Alda
+    _short: "Alda is a music programming language for musicians and programmers to create music using text-based commands.                                                                                             "
+    brew: alda
+  allure:
+    _bin: allure
+    _desc: "[Allure Report](https://docs.qameta.io/allure-testops/) is a flexible, lightweight multi-language test reporting tool. It provides clear graphical reports and allows everyone involved in the development process to extract the maximum of information from the everyday testing process."
+    _docs: https://docs.qameta.io/allure-report/
+    _github: https://github.com/allure-framework/allure2
+    _home: https://docs.qameta.io/allure-testops/
+    _name: Allure
+    _short: "Allure2 is a flexible test reporting tool that provides clear and concise test execution reports with rich visual representations.                                                                        "
+    brew: allure
+    scoop: allure
+    yay: allure
   alt-tab:
     _app: AltTab.app
     _bin: alt-tab
@@ -305,6 +332,51 @@ softwarePackages:
     _name: Amethyst
     _short: "Amethyst is a tiling window manager for macOS.                                                                                                                                                            "
     cask: amethyst
+  android-commandlinetools:
+    _bin: false
+    _deps:
+      - java
+    _github: false
+    _name: Android Studio Command Line Tools
+    _when:cask: '! test -d "${HOMEBREW_PREFIX:-/opt/homebrew}/share/android-commandlinetools"'
+    cask: android-commandlinetools
+  android-platform-tools:
+    _bin: adb
+    _github: false
+    _name: Android Platform Tools
+    cask: android-platform-tools
+  android-studio:
+    _app: Android Studio.app
+    _bin: android-studio
+    _deps:
+      - android-commandlinetools
+      - java
+    _desc: "[Android Studio](https://developer.android.com/studio) is the official integrated development environment for Google's Android operating system, built on JetBrains' IntelliJ IDEA software and designed specifically for Android development. This role installs Android Studio on nearly any operating system and also ensures a configurable list of command-line tools and SDKs are installed and seamlessly integrated with the system (i.e. the role adds the appropriate items to the `PATH` environment variable)."
+    _docs: https://developer.android.com/docs
+    _env:
+      ANDROID_STUDIO_APPDATA:
+        cask: TODO
+        choco: TODO
+        flatpak: TODO
+        snap: TODO
+    _github: false
+    _home: https://developer.android.com/studio
+    _name: Android Studio
+    cask: android-studio
+    choco: androidstudio
+    flatpak: com.google.AndroidStudio
+    snap: android-studio
+    yay: android-studio
+  angular-cli:
+    _bin: ng
+    _desc: "[Angular](https://angular.io) The web development framework for building the future"
+    _docs: https://angular.io/docs
+    _github: https://github.com/angular/angular
+    _home: https://angular.io
+    _name: Angular
+    _short: "Angular is an open-source web application framework maintained by Google for building dynamic single-page applications.                                                                                   "
+    brew: angular-cli
+    npm: "@angular/cli"
   ansible:
     _bin: ansible
     _desc: "[Ansible](https://www.ansible.com/) Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain"
@@ -345,6 +417,52 @@ softwarePackages:
     _name: Ansibler
     _short: "Ansibler is a tool for managing Ansible playbooks and roles in a structured way.                                                                                                                          "
     pipx: ansibler
+  ansifilter:
+    _bin: ansifilter
+    _github: false
+    _name: Ansifilter
+    brew: ansifilter
+    choco: ansifilter
+    port: ansifilter
+  apktool:
+    _bin: apktool
+    _desc: "Apktool is a popular open-source tool used for reverse engineering Android APK files. It allows users to decompile, modify, and recompile APK files, making it easier to analyze and understand the inner \nworkings of Android applications. Apktool is commonly used by developers, security researchers, and enthusiasts to explore and customize APKs. It supports decoding resources, smali code, and manifest   \nfiles, enabling users to make changes to APKs without access to the original source code. Overall, Apktool is a valuable tool for Android application analysis and modification.                          "
+    _github: https://github.com/iBotPeaches/Apktool
+    _name: APKTool
+    _short: "Apktool is a tool for reverse engineering Android APK files.                                                                                                                                              "
+    brew: apktool
+    choco: apktool
+  appium:
+    _bin: appium
+    _desc: "[Appium](https://appium.io/) is an open source automation tool for running scripts and testing native applications, mobile-web applications and hybrid applications on Android or iOS using a webdriver."
+    _docs: https://appium.io/docs/en/about-appium/intro/
+    _github: https://github.com/appium/appium
+    _home: https://appium.io/
+    _name: Appium
+    _service: appium
+    _short: "Appium is an open-source automation tool for testing mobile, web, and hybrid applications.                                                                                                                "
+    brew: appium
+    npm: appium
+  appium-desktop:
+    _app: Appium Server GUI.app
+    _bin: appium-desktop
+    _desc: "Appium Desktop is an open-source app that provides a graphical interface for Appium, an automation tool for testing mobile applications. It allows users to easily set up and run Appium server, inspect  \nmobile apps, and write and run test scripts. Appium Desktop simplifies the process of creating and running automated tests for mobile apps across different platforms like iOS and Android. It is a       \nvaluable tool for mobile app developers and testers looking to automate their testing processes.                                                                                                          "
+    _github: https://github.com/appium/appium-desktop
+    _name: Appium Desktop
+    _short: Appium Desktop is a graphical interface for Appium, an open-source tool for automating mobile app testing. It provides a user-friendly way to interact with Appium server and inspect your app's elements.
+    appimage: appium/appium-desktop
+    cask: appium
+    choco: appium-desktop
+  appium-inspector:
+    _app: Appium Inspector.app
+    _bin: appium-inspector
+    _desc: "Appium Inspector is a tool provided by Appium, an open-source automation framework for mobile apps. It allows users to inspect elements of mobile applications for testing purposes. With Appium          \nInspector, you can view the structure of your app's UI elements, locate elements using various selectors, and generate test scripts. It provides a graphical interface for inspecting elements across     \ndifferent platforms like iOS and Android, making it easier for testers and developers to interact with mobile apps during the automation testing process.                                                 "
+    _github: https://github.com/appium/appium-inspector
+    _name: Appium Inspector
+    _short: "Appium Inspector is a tool for inspecting and recording interactions with mobile apps for testing purposes.                                                                                               "
+    appimage: appium/appium-inspector
+    cask: appium-inspector
+    choco: appium-desktop
   appnest-readme:
     _bin: readme
     _desc: "[Readme](https://github.com/andreasbm/readme/) automatically generate a beautiful best-practice README file based on the contents of your repository"
@@ -354,6 +472,27 @@ softwarePackages:
     _name: Readme
     _short: "Description:                                                                                                                                                                                              \nA GitHub repository for the readme-md-generator tool by Andreas Baum.                                                                                                                                     "
     npm: "@appnest/readme"
+  apprise:
+    _bin: apprise
+    _deps:
+      - pywin32
+      - terminal-notifier
+    _desc: "Apprise is a Python library that simplifies the process of sending notifications to multiple messaging services. It supports various notification services like Slack, Discord, Telegram, and more. With  \nApprise, you can easily integrate notifications into your scripts or applications by providing a unified interface to interact with different messaging platforms. It's a convenient tool for developers  \nand system administrators to streamline their notification workflows.                                                                                                                                     "
+    _github: https://github.com/caronc/apprise
+    _name: Apprise
+    _short: "Apprise is a Python library that simplifies sending notifications to multiple messaging services.                                                                                                         "
+    dnf: apprise
+    pipx: apprise
+  apt-cacher-ng:
+    _bin: null
+    _deprecated: Deprecated in favor of using Sonatype Nexus apt proxies.
+    _desc: "[Apt-Cacher-NG](https://wiki.debian.org/AptCacherNg) is a caching proxy server (or apt proxy) for Debian based distributions like Ubuntu, Kubuntu, Xubuntu, Edubuntu, Linux Mint, etc, which is used to cache the downloaded packages locally on your server."
+    _docs: https://www.unix-ag.uni-kl.de/~bloch/acng/html/index.html
+    _github: https://salsa.debian.org/blade/apt-cacher-ng
+    _home: https://wiki.debian.org/AptCacherNg
+    _name: AptCacherNG
+    _short: "apt-cacher-ng is a caching proxy for software packages, primarily used in Debian-based systems like Ubuntu. It helps in saving bandwidth and speeding up package installations by caching downloaded      \npackages locally.                                                                                                                                                                                         "
+    _systemd: apt-cacher-ng
   aqua:
     _bin: aqua
     _desc: "[aqua](https://aquaproj.github.io/) is a Declarative CLI Version manager written in Go. It supports Lazy Install, Registry, and continuous update with Renovate."
@@ -466,7 +605,56 @@ softwarePackages:
     _short: "assh is a tool that simplifies SSH configuration management by allowing you to define host aliases and settings in a single YAML file.                                                                    "
     brew: assh
     go: moul.io/assh/v2
-    yay: assh                                                                    "
+    yay: assh
+  astronvim:
+    _deps:
+      - bottom
+      - lazygit
+      - neovim
+      - node
+      - python
+      - ripgrep
+      - tree-sitter
+    _deprecated: AstronVIM is deprecated in favor of NvChad which has more stars and is less troublesome to install (in our experience)
+    _desc: "[AstroNvim](https://astronvim.github.io/) is an aesthetic and feature-rich neovim config that is extensible and easy to use with a great set of plugins"
+    _docs: https://astronvim.github.io/
+    _github: https://github.com/AstroNvim/AstroNvim
+    _home: https://astronvim.github.io/
+    _name: AstroNvim
+    _post: |
+      #!/usr/bin/env bash
+      # TODO
+      echo "Waiting on command that installs nvim plugins"
+      # bash -ci "nvim --headless -c 'quitall'"
+    _short: "AstroNvim is a plugin for Neovim that provides astronomy-related features and tools for users interested in astronomy while coding.                                                                       "
+  atuin:
+    _bin: atuin
+    _desc: "Atuin is a tool for managing AWS infrastructure using a simple command-line interface. It allows users to create, update, and delete AWS resources like EC2 instances, security groups, and S3 buckets    \nusing a declarative configuration file. Atuin aims to simplify AWS infrastructure management by providing a user-friendly interface and automating common tasks. It is written in Go and is open-source,  \navailable on GitHub at https://github.com/ellie/atuin.                                                                                                                                                    "
+    _github: https://github.com/ellie/atuin
+    _name: Atuin
+    _short: "Atuin is a command-line tool for managing macOS windows.                                                                                                                                              "
+    brew: atuin
+    cargo: atuin
+    pacman: atuin
+    pkg-termux: atuin
+    port: atuin
+  audacity:
+    _app: Audacity.app
+    _bin: audacity
+    _desc: An open-source audio editor
+    _docs: https://support.audacityteam.org/
+    _github: https://github.com/audacity/audacity
+    _home: https://www.audacityteam.org/
+    _name: Audacity
+    _short: "Audacity is an open-source audio editing software for recording and editing sounds.                                                                                                                       "
+    appimage: Audacity
+    apt: audacity
+    cask: audacity
+    choco: audacity
+    dnf: audacity
+    flatpak: org.audacityteam.Audacity
+    scoop: extras/audacity
+    snap: audacity
   auto-install:
     _bin: auto-install
     _desc: "[auto-install](https://github.com/siddharthkp/auto-install) installs dependencies as you code"

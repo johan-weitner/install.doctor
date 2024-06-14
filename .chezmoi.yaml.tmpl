@@ -1,23 +1,15 @@
-{{- $cloudflareR2AccountId := (default "84fa0d1b16ff8086dd958c468ce7fd59" (env "CLOUDFLARE_R2_ID")) -}}
-{{- $cloudflareUsername := (default "blzalewski@gmail.com" (env "CLOUDFLARE_USERNAME")) -}}
-{{- $cloudflareTeamsOrg := (default "manhattan" (env "CLOUDFLARE_TEAMS_ORG")) -}}
+
 {{- $desktopSession := true -}}
-{{- $dockerHubUser := (default "professormanhattan" (env "DOCKERHUB_USER")) -}}
 {{- $domain := (default "megabyte.space" (env "PUBLIC_SERVICES_DOMAIN")) -}}
-{{- $email := (default "brian@megabyte.space" (env "PRIMARY_EMAIL")) -}}
-{{- $gcloudCoreProject := (default "megabyte-labs" (env "CLOUDSDK_CORE_PROJECT"))}}
-{{- $gcloudEmail := (default "automation@megabyte-labs.iam.gserviceaccount.com" (env "GCE_SERVICE_ACCOUNT_EMAIL"))}}
-{{- $githubUsername := (default "ProfessorManhattan" (env "GITHUB_USERNAME")) -}}
-{{- $gmailAddress := (default "blzalewski@gmail.com" (env "GMAIL_ADDRESS")) -}}
-{{- $gpgKeyId := (default "0xF0A300E4199A1C33" (env "KEYID")) -}}
+{{- $email := (default "johanweitner@gmail.com" (env "PRIMARY_EMAIL")) -}}
+{{- $githubUsername := (default "johan-weitner" (env "GITHUB_USERNAME")) -}}
+{{- $gmailAddress := (default "johanweitner@gmail.com" (env "GMAIL_ADDRESS")) -}}
 {{- $hostname := (output "hostname" "-s") -}}
 {{- $locale := (default "en_US" (env "LANG")) }}
-{{- $name := (default "Brian Zalewski" (env "FULL_NAME")) -}}
+{{- $name := (default "Johan Weitner" (env "FULL_NAME")) -}}
 {{- $restricted := (default false (env "WORK_ENVIRONMENT")) -}}
-{{- $snapcraftEmail := (default "brian@megabyte.space" (env "SNAPCRAFT_EMAIL"))}}
-{{- $surgeshUsername := (default "brian@megabyte.space" (env "SURGESH_USERNAME")) -}}
-{{- $timezone := (default "America/New_York" (env "TIMEZONE")) -}}
-{{- $toolchains := list "CLI-Extras" "Docker" "Go" "Kubernetes" "Web-Development" -}}
+{{- $timezone := (default "Europe/Stockholm" (env "TIMEZONE")) -}}
+{{- $toolchains := list "CLI-Extras" "Docker" "Web-Development" -}}
 {{- $work := (default false (env "WORK_ENVIRONMENT")) -}}
 {{- if and (ne .chezmoi.os "darwin") (ne .chezmoi.os "windows") (not (env "DISPLAY")) -}}
 {{-   $desktopSession = false -}}
@@ -111,14 +103,14 @@
 encryption: "age"
 age:
   identity: "{{ .chezmoi.homeDir }}/.config/age/chezmoi.txt"
-  recipient: "age1necy24c4lzxheey4p2m8v4q000n442wyv47qc640ulyxx9l8dpesdqv7ey"
+  recipient: "age18dmz95jkyghr7e0zl6nc0q2x90awtmnj23vfdwzfl30t6pw34ulskp2wv0"
 gpg:
-  recipient: "{{ $gpgKeyId }}"
+  recipient: ""
 data:
   host:
     arch: "{{ .chezmoi.arch }}"
     cloudflare:
-      teamsOrg: "{{ $cloudflareTeamsOrg }}"
+      teamsOrg: ""
     cpu:
       cores: "{{ $cpuCores }}"
       threads: "{{ $cpuThreads }}"
